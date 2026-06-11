@@ -1,0 +1,53 @@
+/* Definição do tema principal: O clássico Amarelo Escolar */
+:root {
+    --amarelo-escolar: #f4c20d;
+    --preto-sinalizacao: #111111;
+    --branco-seguranca: #ffffff;
+    --cinza-asfalto: #333333;
+}
+
+/* Estilização da "Van" ou "Ônibus" Escolar */
+.veiculo-escolar {
+    background-color: var(--amarelo-escolar);
+    color: var(--preto-sinalizacao);
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 5px solid var(--preto-sinalizacao);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 0 var(--cinza-asfalto); /* Simula a altura do veículo */
+}
+
+/* A famosa faixa preta horizontal com o texto "ESCOLAR" */
+.faixa-sinalizacao {
+    background-color: var(--preto-sinalizacao);
+    color: var(--amarelo-escolar);
+    letter-spacing: 10px; /* Espaçamento entre as letras para leitura rápida */
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+/* Indicadores de Segurança (Luzes de Alerta / Pisca-Alerta) */
+.luz-alerta {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000; /* Vermelho vibrante */
+    border-radius: 50%; /* Formato redondo da lanterna */
+    animation: piscar 1s infinite; /* Simula a luz piscando quando parado */
+}
+
+/* Animação para segurança dos alunos no embarque */
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* Parágrafos internos que representam o conforto e organização */
+.veiculo-escolar p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+    color: var(--cinza-asfalto);
+}
